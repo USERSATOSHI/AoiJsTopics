@@ -8,8 +8,6 @@ const bot = new Bot({
     type:"default",//"dbdjs.db" also work 
     path:"./database/",
     tables:["main"],
-
-
   }
   })
 
