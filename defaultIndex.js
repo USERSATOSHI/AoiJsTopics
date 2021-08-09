@@ -3,7 +3,14 @@ const {Bot} = require('aoi.js')
 const bot = new Bot({
   token: process.env.Token,
   prefix:".",
-  intents:["guilds","guildMessages"]
+  intents:["guilds","guildMessages"],
+  database:{
+    type:"default",//"dbdjs.db" also work 
+    path:"./database/",
+    tables:["main"],
+
+
+  }
   })
 
 bot.onMessage() //Allows The Bot to See Messages. This is Used So that Bot can see the commands.
